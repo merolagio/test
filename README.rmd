@@ -1,0 +1,14 @@
+test
+====
+
+testing
+
+```{r myplot, }
+library(spca)
+data(baseball)
+bpca = pca(baseball)
+bbe1 <- spcabe(baseball, nd = 4, thresh = 0.3)
+summary(bbe1)
+bbe1
+plot(bbe1, plotloadvsPC = TRUE, pc = bpca, mfr = 2, mfc = 2)
+```
